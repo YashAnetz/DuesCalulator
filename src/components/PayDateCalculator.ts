@@ -69,10 +69,19 @@ export class PayDateCalculator {
     
     // 3: Ensure that the next pay date is the calculated due date
     if (nextPayDate <= dueDate) {
-      nextPayDate = getNextPayDate(nextPayDate, paySpan); // Recalculate pay date until it's after the due date
-      console.log("Adjusted next pay date to be after due date: ", nextPayDate.toDateString());
+       // Recalculate pay date until it's after the due date
+      while (nextPayDate <= dueDate){
+        nextPayDate = getNextPayDate(nextPayDate, paySpan);
+        
+        
+      }
       dueDate = nextPayDate
+      
+      
       setLogMessage1(`Due Date should be Pay date after 10 days: ${dueDate.toDateString()}`);
+    } else
+    {
+      dueDate = nextPayDate 
     }
     //setLogMessage1(`Due Date Should be immediate Paydate after the 10 day condition: ${nextPayDate.toDateString()}`);
     // 4: If direct deposit is **not** enabled, add 1 day to the due date
