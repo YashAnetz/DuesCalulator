@@ -13,3 +13,27 @@
    * @param payDay: Date - A date containing one of the customer's paydays.
    * @param hasDirectDeposit: boolean - A boolean determining whether or not the customer receives their paycheck via direct deposit.
    */
+
+
+#My Flow
+
+Start - Due Date = 1st Pay Date after Fund Day Loop Type = Forward 
+1. Check if direct deposit 
+yes -  go to 2
+no - Due date +1 , Go to 2
+2. Check if weekend 
+Yes -  Go to 4
+no - Go to 3
+3. Check if holiday
+yes - Loop type - reverse , go to 4
+no - go to 5
+4. Loop Type
+Forward - Due date +1 , go to 2
+Reverse - Due date -1 , go to 2
+5.  Due Date >=
+fund day + 10
+days?
+Yes - Return due date 
+no - Go to 6
+6. Due Date = next pay date Loop Type =
+go to 1
