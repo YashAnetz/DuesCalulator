@@ -1,0 +1,179 @@
+/* Add this to your styles (e.g., App.css or a custom CSS file) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Set height to 100% for both html and body */
+  }
+  
+  /* Make the 'main' div cover the entire screen */
+  .main {
+    width: 100%; /* Make the width 100% of the viewport */
+    height: 100vh; /* Use the full height of the viewport */
+    display: flex; /* Optional: if you're using flexbox for layout */
+    flex-direction: column; /* Optional: set the layout direction */
+    justify-content: center; /* Optional: center content */
+    align-items: center; /* Optional: center content */
+    background-color: #2D4059;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.highlight-holiday {
+    background-color: #dad6b5; /* Yellow color for holidays */
+    color: #d51a1a;
+    border-radius: 10px;
+    padding: 10px;
+    width: 10px;
+    height: 30px;
+  font-weight: bolder;
+  }
+
+  h1
+  {
+    color: #ffeb3b;
+  }
+  
+  .react-calendar__tile
+  {
+font-size: medium;
+  }
+  .react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  background-color:#ffeb3b;
+  color:#2D4059;
+}
+
+  .react-calendar__month-view__days__day--weekend {
+    color: #d4c1c1;
+    font-size: medium;
+  }
+  .react-calendar__navigation button
+  {
+    padding: 2px;
+    font-size: medium;
+    font-weight: bolder;
+    color: #d4c1c1;
+  }
+  .react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color:#ffeb3b;
+  color: #2D4059;
+}
+
+  
+ 
+  
+/* Flex container setup */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+    justify-content: flex-start; /* Align items to the start of the container */
+    gap: 10px; /* Optional: add space between items */
+  
+  }
+  
+  /* Style for g1, g2, and g3 to take equal space */
+  .g1, .g2, .g3 {
+    flex: 1; /* Each item takes an equal amount of space */
+    padding: 20px;
+    height: 450px; /* Set a fixed height for demonstration */
+    
+    text-align: left; /* Center text */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    background-color:#1E2C40;
+    border-radius: 10px;
+    
+    
+  }
+ 
+  label
+  {
+    width: 100%; /* Set the width of the label */
+    display: inline-block; /* Make the label block-level so width applies */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin: 2px;
+    color: #ffeb3b;
+    text-align: center;
+    font-size: larger;
+   
+  }
+
+  .ip--style{
+    width: 330px;
+    height: 40px;
+    background-color: #2D4059;
+    border: none;
+    color: antiquewhite;
+    text-align: center;margin-top: 4px;
+    border-radius: 10px;
+  }
+
+  select
+  {width: 332px;
+    height: 42px;
+border: none;
+margin-top: 4px;
+background-color: #2D4059;
+color: antiquewhite;
+border-radius: 10px;
+text-align: center;
+font-size: large;
+}
+
+
+  .g1 div
+  {
+
+    margin: 2px;
+  }
+
+  button
+  {
+    width: 90%;
+    height: 40px;
+    background-color: #ffeb3b;
+    border: 2px #ffeb3b;
+    border-radius: 10px;
+    border: none;
+    font-size: larger; /* Optional: control font size */
+    cursor: pointer; /* Optional: cursor pointer on hover */
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+  }
+  button:hover
+  {
+    background-color: #1E2C40;
+    border: 2px #2D4059 solid;
+    color:white;
+  }
+
+  .due--style
+  {
+    font-size: larger;
+    color: #ffeb3b;
+    font-weight: bolder;
+  }
+
+  h2{
+    color: antiquewhite;
+    background-color: #2D4059;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .logname--style
+  {
+    color: aliceblue;
+    font-weight: 200;
+  }
+
+  .cal
+  {
+    border-radius: 10px;
+    background-color:#2D4059;
+    color: #ffeb3b;
+    border: none;
+    padding: 4px;
+  
+  }
