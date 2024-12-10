@@ -1,4 +1,4 @@
-# HandTevy
+# DuesCalculator
   * Yash Ahire
    * Hello This is my logic understanding as per the problem statement
    * User selects Pay date,Fund Date,Pay span and Deposit type.
